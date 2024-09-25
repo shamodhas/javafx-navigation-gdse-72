@@ -2,7 +2,10 @@ package ijse.gdse.navigations.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 /**
  * --------------------------------------------
@@ -20,8 +23,11 @@ public class LayoutTwoFormController {
     public AnchorPane pageTwo;
 
     @FXML
-    public void btnPrevOnAction(ActionEvent actionEvent) {
-
+    public void btnPrevOnAction(ActionEvent actionEvent) throws IOException {
+        pageTwo.getChildren().clear();
+        pageTwo.getChildren().add(FXMLLoader
+                .load(getClass()
+                        .getResource("/view/LayoutOneForm.fxml")));
     }
 
 

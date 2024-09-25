@@ -13,7 +13,11 @@ package ijse.gdse.navigations.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
 
 public class LayoutOneFormController {
 
@@ -21,8 +25,11 @@ public class LayoutOneFormController {
     private AnchorPane pageOne;
 
     @FXML
-    void btnNextOnAction(ActionEvent event) {
-        System.out.println("clicked ...!");
+    void btnNextOnAction(ActionEvent event) throws IOException {
+        pageOne.getChildren().clear();
+        AnchorPane load = FXMLLoader
+                .load(getClass().getResource("/view/LayoutTwoForm.fxml"));
+        pageOne.getChildren().add(load);
     }
 
 }
