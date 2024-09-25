@@ -2,21 +2,36 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="pageOne" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ijse.gdse.navigations.controller.LayoutOneFormController">
    <children>
-      <Label layoutX="264.0" layoutY="183.0" text="Page 1">
+      <Label layoutX="274.0" layoutY="14.0" text="Page 1">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Button layoutX="218.0" layoutY="246.0" mnemonicParsing="false" onAction="#btnNextOnAction" text="Next">
+      <Button layoutX="239.0" layoutY="283.0" mnemonicParsing="false" onAction="#btnNextOnAction" text="Next">
          <font>
             <Font size="48.0" />
          </font>
       </Button>
+      <TextField fx:id="txtInput" layoutX="194.0" layoutY="78.0" prefHeight="25.0" prefWidth="254.0" promptText="enter here">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Button layoutX="231.0" layoutY="144.0" mnemonicParsing="false" onAction="#printOnAction" text="print me">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblText" layoutX="270.0" layoutY="228.0" text="Initial text">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

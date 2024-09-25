@@ -15,6 +15,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
@@ -32,4 +34,18 @@ public class LayoutOneFormController {
         pageOne.getChildren().add(load);
     }
 
+    @FXML
+    public TextField txtInput;
+
+    @FXML
+    public Label lblText;
+
+    @FXML
+    public void printOnAction(ActionEvent actionEvent) {
+        String inputText = txtInput.getText();
+
+        lblText.setText(inputText);
+
+        System.out.println(inputText.equals("hello"));
+    }
 }
