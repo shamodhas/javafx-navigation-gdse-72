@@ -3,6 +3,6 @@ module ijse.gdse.navigations {
     requires javafx.fxml;
 
 
-    opens ijse.gdse.navigations to javafx.fxml;
+    opens ijse.gdse.navigations.controller to javafx.fxml;
     exports ijse.gdse.navigations;
 }

@@ -1,28 +1,28 @@
 package ijse.gdse.navigations.controller;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.layout.AnchorPane;
+
 /**
  * --------------------------------------------
  * Author: R.I.B. Shamodha Sahan Rathnamalala
  * GitHub: https://github.com/shamodhas
  * Website: https://shamodha.live
  * --------------------------------------------
- * Created: 9/25/2024 12:14 PM
+ * Created: 9/25/2024 2:21 PM
  * Project: Navigations
  * --------------------------------------------
  **/
 
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.layout.AnchorPane;
-
-public class LayoutFormController {
+public class LayoutTwoFormController {
+    @FXML
+    public AnchorPane pageTwo;
 
     @FXML
-    private AnchorPane pageOne;
+    public void btnPrevOnAction(ActionEvent actionEvent) {
 
-    @FXML
-    void btnNextOnAction(ActionEvent event) {
-        System.out.println("clicked ...!");
     }
+
 
 }
