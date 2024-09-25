@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pageOne" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ijse.gdse.navigations.controller.LayoutFormController">
+   <children>
+      <Label layoutX="264.0" layoutY="183.0" text="Page 1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="218.0" layoutY="246.0" mnemonicParsing="false" onAction="#btnNextOnAction" text="Next">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
